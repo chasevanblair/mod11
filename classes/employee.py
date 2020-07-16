@@ -44,3 +44,10 @@ if __name__ == "__main__":
     salaried_employee.give_raise(5000)
     print(salaried_employee.display())
     del salaried_employee
+
+    hourly_employee = HourlyEmployee(lname="vanblair", fname='chase', addy="7777777 st", phone="55555", start="7/15",
+                                     hourly=10.0)
+    print("\n" + hourly_employee.display())
+    hourly_employee.give_raise(2)
+    print(hourly_employee.display())
+    del hourly_employee
